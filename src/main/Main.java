@@ -28,11 +28,8 @@ public class Main {
     }
 
     static void generateTestData() {
-        Product product = new Product("1", "Water bottle", new BigDecimal("20"));
-        Product product2 = new Product("2", "T-shirt", new BigDecimal("15"));
-        Product product3 = new Product("3", "Sport boots", new BigDecimal("55"));
-        productFacade.addProduct(product);
-        productFacade.addProduct(product2);
-        productFacade.addProduct(product3);
+        productFacade.addProduct(new Product("1", "Water bottle", new BigDecimal("20")));
+        productFacade.addProduct(new Product("2", "T-shirt", new BigDecimal("15")));
+        productFacade.addProduct(new Product("3", "Sport boots", new BigDecimal("55")));
     }
 }
